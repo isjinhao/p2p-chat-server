@@ -288,6 +288,9 @@ public class Server extends JFrame {
 					}
 				}
             	
+            	String msgRecord = dateFormat.format(new Date()) + ":  " + offlineMessage.getId() + " 退出！" + "\r\n";
+    			JTextPaneUtils.printTextLog(textPaneMsgRecord, msgRecord, Color.red);
+            	
             }
             clientChannel.write(sendBuff);
         } // end 能正确解码的字符串才能 进入其他过程
