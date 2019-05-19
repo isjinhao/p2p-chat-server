@@ -286,6 +286,7 @@ public class Server extends JFrame {
 					if (onlineUsersDtm.getValueAt(i, 0).equals(up.getId())) {
 						onlineUsersDtm.removeRow(i);
 					}
+					
 				}
             	
             	String msgRecord = dateFormat.format(new Date()) + ":  " + offlineMessage.getId() + " 退出！" + "\r\n";
